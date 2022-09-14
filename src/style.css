@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");   
+/* RESET CSS */
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+
+    color: var(--text-color-dark-grey);
+    line-height: 2rem;
+
+    padding: 0;
+    margin: 0;
+}
+
+/* HTML STYLES */
+
+html {
+    --primary-color-black: #000;
+    --primary-color-black-alphapointfive: rgba(0, 0, 0, 0.5);
+    --primary-color-header: #080B12;
+    --primary-color-main: #141922;
+    --primary-color-footer: #282828;
+    --text-color-white: #ffffff;
+    --text-color-light-grey: #D2D2D2;
+    --text-color-dark-grey: #A3A3A3;
+    --border-color-green: #A7F62E;
+    --header-height: 100px;
+    --footer-height: 100px;
+    --left-menu-width: 300px;
+    --left-menu-width-minimised: 70px;
+    --icon-small-width:30px;
+    --icon-width:40px;
+}
+
+.grey-background {
+    background-color: var(--text-color-dark-grey);
+}
+
+.footer-background {
+    background-color: var(--primary-color-footer);
+}
+
+.style-white-bold {
+    color: var(--text-color-white);
+    font-weight: bold;
+}
+
+.style-dark-grey {
+    color: var(--text-color-dark-grey);
+}
+
+.style-light-grey-small-bold {
+    color: var(--text-color-light-grey);
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+.style-font-size-normal {
+    font-size: 1rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.no-border {
+    border: none;
+}
+
+a {
+    vertical-align: middle;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.minwidth {
+    min-width: auto;
+}
+
+/* LEFT MENU */
+#logo {
+    width: 40px;
+    margin: 20px 0 0 18px;
+}
+
+.left-menu nav li {
+    border-left: 3px solid transparent;
+}
+
+/* MAIN CONTAINER */
+.header {
+    background-color: var(--primary-color-header);
+    position: sticky;
+    top: 0;
+    opacity: 98%;
+    z-index: 100;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 18px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background-color: var(--text-color-light-grey);
+}
+
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background: var(--text-color-dark-grey);
+    border-radius: 20px; 
+    width: 10px;
+    border: 3.5px solid var(--text-color-light-grey);
+}
+
+.scrollbar::-webkit-scrollbar-corner {
+    background-color: var(--text-color-light-grey);
+}
+
+.align-middle {
+    justify-content: center;
+    text-align: center;
+}
+
+.underline {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    border-top: 3px solid transparent;
+}
+
+/* FOOTER */
+.currently-playing {
+    display: grid;
+    justify-content: center;
+}
+
+.currently-playing .icon {
+    margin: auto 10px;
+    width: 50px;
+}
+
+.currently-playing .icon-x-small {
+    margin: auto 8px;
+}
+
+.currently-playing h3 {
+    font-size: 1rem;
+    margin-top: auto;
+    line-height: normal;
+}
+
+.currently-playing h4 {
+    font-size: 0.8rem;
+    margin-bottom: auto;
+    line-height: normal;
+}
+
+.control-panel {
+    height: 50px;
+}
+
+.control-panel .icon-x-small,
+.volume-rocker .icon-x-small {
+    margin: auto 5px;
+}
+
+.control-panel .icon-small {
+    margin: auto 20px;
+}
+
+.time-slider {
+    min-width: auto;
+    max-width: 100%;
+    height: 3px;
+    margin: 15px;
+}
+
+.volume-slider {
+    width: 145px;
+    height: 3px;
+    margin: auto 15px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    display: none;
+  } 
+
+input[type="range"] {
+    -webkit-appearance: none;
+    height: 4px;
+
+    background: var(--text-color-dark-grey);
+    background-image: linear-gradient(var(--text-color-light-grey), var(--text-color-light-grey));
+    background-size: 20% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .align-right {
+      text-align: right;
+  }
+
+/* BUTTONS */
+.crea-playlist-button {
+    background-color: var(--primary-color-black);
+    border: none;
+    margin: 20px 0px 0px 20px;
+    text-align: left;
+}
+
+.crea-playlist-button span {
+    display: grid;
+    padding: 4px 10px;
+}
+
+.installa-app-button {
+    display: grid;
+    border: none;
+    border-bottom: 2px var(--text-color-dark-grey) solid;
+    background-color: var(--primary-color-black);
+    margin: 0 20px;
+    justify-content: left;
+    padding-bottom: 5px;
+}
+
+
+.profile-button {
+    background-color: var(--primary-color-black);
+    border: none;
+    margin: 10px 20px 10px 20px;
+}
+
+.installa-app-button span,
+.profile-button span {
+    padding-left: 10px;
+}
+
+.effettua-lupgrade {
+    border-radius: 30px;
+    padding: 5px 35px;
+    background-color: var(--primary-color-header);
+    border: 2px var(--text-color-light-grey) solid;
+    height: fit-content;
+    width: fit-content;
+    margin: auto 5px;
+}
+
+.effettua-lupgrade p {
+    font-weight: bold;
+    color: var(--text-color-white);    
+}
+
+.card {
+    background-color: var(--primary-color-main);
+    border: none;
+}
+
+
+/* H TAG PROPERTIES */
+h1 {
+    color: var(--text-color-white);
+    padding: 25px 4px;
+    font-size: 1.7rem;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.left-menu h2 {
+    color: var(--text-color-white);
+    padding-left: 20px;
+    font-size: 1.5rem;
+    width: fit-content;
+}
+
+.main-container h2 {
+    color: var(--text-color-white);
+    padding-left: 30px;
+    font-size: 2.2rem;
+    padding-bottom: 10px;
+    width: fit-content;
+}
+
+h3 {
+    color: var(--text-color-white);
+    font-size: 1.2rem;
+    width: fit-content;
+}
+
+.main-container h3,
+.main-container h4 {
+    margin: 0 auto;
+}
+
+
+h4 {
+    width: fit-content;
+}
+
+/* IMAGES */
+img {
+    width: 20px;
+}
+
+.icon-small-height {
+    height: var(--icon-small-width);
+}
+
+.album {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+
+.circular {
+    border-radius: 50%;
+}
+
+.icon {
+    width: var(--icon-width);
+}
+
+.icon-small {
+    width: var(--icon-small-width);
+}
+
+/* PADDING */
+.pd-xs {
+    padding: 5px;
+}
+
+.pd-s {
+    padding: 10px;
+}
+
+.pd-m {
+    padding: 20px;
+}
+
+.pd-l {
+    padding: 30px;
+}
+
+/* MARGIN */
+.ma-xs {
+    margin: 5px;
+}
+
+.ma-s {
+    margin: 10px;
+}
+
+.ma-m {
+    margin: 20px;
+}
+
+.ma-l {
+    margin: 30px;
+}

@@ -1,0 +1,125 @@
+/* MAIN CONTAINERS */
+
+body {
+    display: grid;
+    grid-template: 
+    "left-menu main-container" 1fr
+    "footer footer" var(--footer-height) /
+    var(--left-menu-width) 1fr
+    ;
+
+    height: 100vh;
+}
+
+.left-menu {
+    grid-area: left-menu;
+    display: grid;
+    grid-template-rows: var(--header-height) auto auto 1fr auto auto;
+    background-color: var(--primary-color-black);
+    overflow-y: auto;
+}
+
+.main-container {
+    grid-area: main-container;
+    display: grid;
+    grid-template-rows: var(--header-height) repeat(11, auto);
+    width: auto;
+    overflow-x: auto;
+    max-height: 100vh;
+    overflow-y: scroll;
+    background-color: var(--primary-color-main);
+    
+}
+
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: var(--left-menu-width) 1fr auto;
+
+    background-color: var(--primary-color-footer);
+}
+
+/* GENERIC GRIDS */
+/* rows */
+.auto-rows {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.two-rows__expand-one {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.three-rows__expand-one-two-three {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+/* columns */
+.two-columns__expand-one {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.two-columns__expand-two {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.three-columns__expand-one-three {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+.three-columns__expand-two {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.three-columns__expand-three {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+}
+
+.three-columns__expand-all {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.3fr;
+}
+
+.four-columns__expand-two {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+}
+
+.five-columns__expand-one-five {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto 1fr;
+}
+
+.five-columns__expand-three {
+    display: grid;
+    grid-template-columns: auto auto 1fr auto auto;
+}
+
+.seven-columns__expand-one-seven {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto auto 1fr;
+}
+
+.auto-columns {
+    display: flex;
+    grid-auto-flow: column;
+}
+
+.responsive-columns-large {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+
+    gap: 10px;
+}
+
+.responsive-columns-small {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 180px));
+}

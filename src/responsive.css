@@ -1,0 +1,129 @@
+/* HOVERING PROPERTIES */
+
+.left-menu a:hover,
+.left-menu ul :hover,
+.left-menu button :hover {
+    color: var(--text-color-white);
+}
+
+.left-menu nav li:hover {
+    border-left: 3px solid var(--border-color-green);
+}
+
+.main-container h2:hover,
+.main-container h3:hover,
+.main-container h4:hover,
+footer h3:hover,
+footer h4:hover {
+    text-decoration: underline;
+}
+
+.main-container li:hover .underline {
+    border-top: 3px solid var(--border-color-green);
+}
+
+.effettua-lupgrade:hover {
+    padding: 7px 37px;
+    margin: auto 1;
+}
+
+/* IMAGE OVERLAY */
+
+
+.wrapper {
+    position: relative;
+    z-index: 1;
+    width: 300px;
+}
+
+.overlay img {
+    display: block;
+    width: 50px;
+    margin: auto;
+    position: relative;
+    top: 155px;
+    transform: translateY(-50%);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: var(--primary-color-black);
+    background: var(--primary-color-black-alphapointfive);
+    opacity: 0;
+}
+  
+.wrapper:hover .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: var(--primary-color-black);
+    background: var(--primary-color-black-alphapointfive);
+    z-index: 2;
+    opacity: 2;
+}
+
+
+/* MEDIA QUIERIES  */
+@media screen and (max-width: 1030px) {
+    /*minimise left menu */
+    body {
+        display: grid;
+        grid-template: 
+        "left-menu main-container" 1fr
+        "footer footer" var(--footer-height) /
+        var(--left-menu-width-minimised) 1fr
+        ;
+    
+        height: 100vh;
+    }
+
+    .left-menu {
+        display: grid;
+        grid-template-rows: auto auto 1fr auto;
+    }
+
+    .left-menu span,
+    h1,
+    h2,
+    .playlist {
+        display: none;
+    }
+
+    .profile-outline {
+        margin-left: 2px;
+    }
+
+    .responsive .ma-m {
+         margin: 10px;
+     }
+
+     .currently-playing {
+         max-width: 200px;
+     }
+
+    .currently-playing .icon-x-small {
+        display: block;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+    }
+
+    .style-light-grey-small-bold {
+        margin: 0 10px;
+    }
+
+    .volume-rocker img {
+        margin: 40px 5px;
+    }
+
+    .installa-app-button {
+        border-bottom: none;
+    }
