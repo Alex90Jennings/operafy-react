@@ -1,11 +1,11 @@
 /* MAIN CONTAINERS */
 
-body {
+.main-body {
     display: grid;
-    grid-template: 
-    "left-menu main-container" 1fr
-    "footer footer" var(--footer-height) /
-    var(--left-menu-width) 1fr
+    grid-template:
+        "left-menu main-container" 1fr
+        "footer footer" var(--footer-height) /
+        var(--left-menu-width) 1fr
     ;
 
     height: 100vh;
@@ -28,7 +28,7 @@ body {
     max-height: 100vh;
     overflow-y: scroll;
     background-color: var(--primary-color-main);
-    
+
 }
 
 footer {

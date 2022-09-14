@@ -5,13 +5,13 @@ import './style.css';
 
 function App() {
   return (
-    <div classNameName="App">
+    <div classNameName="App main-body">
       <aside className="left-menu dashed-border-blue">
 
         <div className="three-rows__expand-one-three logo">
             <div></div>
             <div className="three-columns__expand-three">
-                <img id="logo" src="/boolean-uk-html-spotify/assets/img/logo.png" alt="logo"/>
+                <img id="logo" src="./assets/img/logo.png" alt="logo"/>
                 <h1>Operafy</h1>
                 <div></div>
             </div>
@@ -21,20 +21,20 @@ function App() {
         <nav className="dashed-border-green">
             <ul>
                 <li>
-                    <a className="ma-m two-columns__expand-two">
-                        <img className="icon-small" src="/boolean-uk-html-spotify/assets/img/home.svg" alt="home-white"/>
+                    <a className="ma-m two-columns__expand-two" href="www.spotify.com">
+                        <img className="icon-small" src="./assets/img/home.svg" alt="home-white"/>
                         <p><span className="pd-s">Home</span></p>
                     </a>
                 </li>
                 <li>
-                    <a className="ma-m two-columns__expand-two">
-                        <img className="icon-small" src="/boolean-uk-html-spotify/assets/img/search.svg" alt="magnifying-glass-grey"/>
+                    <a className="ma-m two-columns__expand-two" href="www.spotify.com">
+                        <img className="icon-small" src="./assets/img/search.svg" alt="magnifying-glass-grey"/>
                         <p><span className="pd-s">Cerca</span></p>
                     </a>
                 </li>
                 <li>
-                    <a className="ma-m two-columns__expand-two">
-                        <img className="icon-small" src="/boolean-uk-html-spotify/assets/img/libreria.svg" alt="libreria-grey"/>
+                    <a className="ma-m two-columns__expand-two" href="www.spotify.com">
+                        <img className="icon-small" src="./assets/img/libreria.svg" alt="libreria-grey"/>
                         <p><span className="pd-s">La tua liberia</span></p>
                     </a>
                 </li>
@@ -44,32 +44,32 @@ function App() {
         <div className="playlist dashed-border-green">
             <h2>Playlist</h2>
             <button className="two-columns__expand-two crea-playlist-button">
-                <img className="icon pd-s grey-background" src="/boolean-uk-html-spotify/assets/img/plus.png" alt="plus-grey"/>
+                <img className="icon pd-s grey-background" src="./assets/img/plus.png" alt="plus-grey"/>
                 <span className="style-font-size-normal">Crea Playlist</span>
             </button>
             <ul className="pd-m">
-                <li><a href="www.bbc.co.uk">gym opera</a></li>
-                <li><a href="www.bbc.co.uk">Mozart Madness</a></li>
-                <li><a href="www.bbc.co.uk">dubstep-Opera-Vibes</a></li>
-                <li><a href="www.bbc.co.uk">road trip opera</a></li>
-                <li><a href="www.bbc.co.uk">opera hype</a></li>
-                <li><a href="www.bbc.co.uk">summer 2019 opera tunes</a></li>
-                <li><a href="www.bbc.co.uk">chilled out opera</a></li>
-                <li><a href="www.bbc.co.uk">opera underground club mix</a></li>
+                <li><a href="www.spotify.com">gym opera</a></li>
+                <li><a href="www.spotify.com">Mozart Madness</a></li>
+                <li><a href="www.spotify.com">dubstep-Opera-Vibes</a></li>
+                <li><a href="www.spotify.com">road trip opera</a></li>
+                <li><a href="www.spotify.com">opera hype</a></li>
+                <li><a href="www.spotify.com">summer 2019 opera tunes</a></li>
+                <li><a href="www.spotify.com">chilled out opera</a></li>
+                <li><a href="www.spotify.com">opera underground club mix</a></li>
             </ul>
         </div>
 
         <button className="two-rows__expand-one border-bottom installa-app-button">
             <div></div>
             <div className="three-columns__expand-three dashed-border-green">
-                <img className="icon-small" src="/boolean-uk-html-spotify/assets/img/download.svg" alt="download-grey"/>
+                <img className="icon-small" src="./assets/img/download.svg" alt="download-grey"/>
                 <span className="">Installa app</span>
                 <div></div>
             </div>
         </button>
 
         <button  className="three-columns__expand-three dashed-border-green profile-button">
-            <img className="icon-small profile-outline" src="/boolean-uk-html-spotify/assets/img/profile.svg" alt="profile-pic"/>
+            <img className="icon-small profile-outline" src="./assets/img/profile.svg" alt="profile-pic"/>
             <span className="style-white-bold">Alex90Jennings</span>
             <div></div>
         </button>
@@ -89,27 +89,27 @@ function App() {
         <nav className="full-width dashed-border-green">
             <ul className="responsive-columns-small align-middle bold">
                 <li className="minwidth ma-m">
-                    <a href="www.bbc.co.uk">IN EVIDENZA</a>
+                    <a href="www.spotify.com">IN EVIDENZA</a>
                     <div className="underline"></div>
                 </li>
                 <li className="minwidth ma-m">
-                    <a href="www.bbc.co.uk">PODCAST</a>
+                    <a href="www.spotify.com">PODCAST</a>
                     <div className="underline"></div>
                 </li>
                 <li className="minwidth ma-m">
-                    <a href="www.bbc.co.uk">classNameIFICHE</a>
+                    <a href="www.spotify.com">classNameIFICHE</a>
                     <div className="underline"></div>
                 </li>
                 <li className="minwidth ma-m">
-                    <a href="www.bbc.co.uk">GENERI E MOOD</a>
+                    <a href="www.spotify.com">GENERI E MOOD</a>
                     <div className="underline"></div>
                 </li>
                 <li className="minwidth ma-m">
-                    <a href="www.bbc.co.uk">NUOVE USCITE</a>
+                    <a href="www.spotify.com">NUOVE USCITE</a>
                     <div className="underline"></div>
                 </li>
                 <li className="minwidth ma-m">
-                    <a href="www.bbc.co.uk">SCOPRI</a>
+                    <a href="www.spotify.com">SCOPRI</a>
                     <div className="underline"></div>
                 </li>
             </ul>
@@ -121,61 +121,61 @@ function App() {
             <ul className="card-list responsive-columns-large">
                 <li className="wrapper">
                     <button className="card">
-                        <img className="album" src="/boolean-uk-html-spotify/assets/img/mixdaily.jpeg" alt="four-albums"/>
+                        <img className="album" src="./assets/img/mixdaily.jpeg" alt="four-albums"/>
                         <h3>Opera Mix</h3>
                         <h4>Best of the 1880s and more</h4>
                         <div className="overlay">
-                            <img className="play-white" src="/boolean-uk-html-spotify/assets/img/play-white.png" alt="play-white"/>
+                            <img className="play-white" src="./assets/img/play-white.png" alt="play-white"/>
                         </div>
                     </button>
                 </li>
                 <li className="wrapper">
                     <button className="card">
-                        <img className="album" src="/boolean-uk-html-spotify/assets/album-covers/album-one.jpg" alt="album-one"/>
+                        <img className="album" src="./assets/album-covers/album-one.jpg" alt="album-one"/>
                         <h3>Marriage of Figaro</h3>
                         <h4>Mozart (1786)</h4>
                         <div className="overlay">
-                            <img src="/boolean-uk-html-spotify/assets/img/play-white.png" alt="play-white"/>
+                            <img src="./assets/img/play-white.png" alt="play-white"/>
                         </div>
                     </button>
                 </li>
                 <li className="wrapper">
                     <button className="card">
-                        <img className="album" src="/boolean-uk-html-spotify/assets/album-covers/album-two.jpg" alt="album-two"/>
+                        <img className="album" src="./assets/album-covers/album-two.jpg" alt="album-two"/>
                         <h3>La Boheme</h3>
                         <h4>Puccini (1896)</h4>
                         <div className="overlay">
-                            <img src="/boolean-uk-html-spotify/assets/img/play-white.png" alt="play-white"/>
+                            <img src="./assets/img/play-white.png" alt="play-white"/>
                         </div>
                     </button>
                 </li>
                 <li className="wrapper">
                     <button className="card">
-                        <img className="album" src="/boolean-uk-html-spotify/assets/album-covers/album-three.jpg" alt="album-three"/>
+                        <img className="album" src="./assets/album-covers/album-three.jpg" alt="album-three"/>
                         <h3>Der Rosenkavalier</h3>
                         <h4>Richard Strauss (1911)</h4>
                         <div className="overlay">
-                            <img src="/boolean-uk-html-spotify/assets/img/play-white.png" alt="play-white"/>
+                            <img src="./assets/img/play-white.png" alt="play-white"/>
                         </div>
                     </button>
                 </li>
                 <li className="wrapper">
                     <button className="card"> 
-                        <img className="album" src="/boolean-uk-html-spotify/assets/album-covers/album-four.jpg" alt="album-four"/>
+                        <img className="album" src="./assets/album-covers/album-four.jpg" alt="album-four"/>
                         <h3>Wozzeck</h3>
                         <h4>Berg (1925)</h4>
                         <div className="overlay">
-                            <img src="/boolean-uk-html-spotify/assets/img/play-white.png" alt="play-white"/>
+                            <img src="./assets/img/play-white.png" alt="play-white"/>
                         </div>
                     </button>
                 </li>
                 <li className="wrapper">
                     <button className="card">
-                        <img className="album" src="/boolean-uk-html-spotify/assets/album-covers/album-five.jpg" alt="album-five"/>
+                        <img className="album" src="./assets/album-covers/album-five.jpg" alt="album-five"/>
                         <h3>Peter Grimes</h3>
                         <h4>Britten (1945)</h4>
                         <div className="overlay">
-                            <img src="/boolean-uk-html-spotify/assets/img/play-white.png" alt="play-white"/>
+                            <img src="./assets/img/play-white.png" alt="play-white"/>
                         </div>
                     </button>
                 </li>
@@ -189,21 +189,21 @@ function App() {
             <ul className="card-list responsive-columns-large">
                 <li>
                     <button className="card wrapper">
-                        <img className="album" src="/boolean-uk-html-spotify/assets/album-covers/album-six.jpg" alt="album-six"/>
+                        <img className="album" src="./assets/album-covers/album-six.jpg" alt="album-six"/>
                         <h3>Tosca</h3>
                         <h4>Puccini (1990)</h4>
                         <div className="overlay">
-                            <img src="/boolean-uk-html-spotify/assets/img/play-white.png" alt="play-white"/>
+                            <img src="./assets/img/play-white.png" alt="play-white"/>
                         </div>
                     </button>
                 </li>
                 <li>
                     <button className="card wrapper">
-                        <img className="album" src="/boolean-uk-html-spotify/assets/album-covers/album-seven.jpg" alt="album-seven"/>
+                        <img className="album" src="./assets/album-covers/album-seven.jpg" alt="album-seven"/>
                         <h3>L'incoronazione di Poppea</h3>
                         <h4>Monteverdi (1643)</h4>
                         <div className="overlay">
-                            <img src="/boolean-uk-html-spotify/assets/img/play-white.png" alt="play-white"/>
+                            <img src="./assets/img/play-white.png" alt="play-white"/>
                         </div>
                     </button>
                 </li>
@@ -218,21 +218,21 @@ function App() {
             <ul className="card-list responsive-columns-large">
                 <li>
                     <button className="card card-circular wrapper">
-                        <img className="album circular" src="/boolean-uk-html-spotify/assets/album-covers/album-eight.jpg" alt="album-eight"/>
+                        <img className="album circular" src="./assets/album-covers/album-eight.jpg" alt="album-eight"/>
                         <h3>Don Giovanni</h3>
                         <h4>Mozart (1787)</h4>
                         <div className="overlay">
-                            <img src="/boolean-uk-html-spotify/assets/img/play-white.png" alt="play-white"/>
+                            <img src="./assets/img/play-white.png" alt="play-white"/>
                         </div>
                     </button>
                 </li>
                 <li>
                     <button className="card card-circular wrapper">
-                        <img className="album circular" src="/boolean-uk-html-spotify/assets/album-covers/album-nine.jpg" alt="album-nine"/>
+                        <img className="album circular" src="./assets/album-covers/album-nine.jpg" alt="album-nine"/>
                         <h3>Otello</h3>
                         <h4>Verdi (1887)</h4>
                         <div className="overlay">
-                            <img src="/boolean-uk-html-spotify/assets/img/play-white.png" alt="play-white"/>
+                            <img src="./assets/img/play-white.png" alt="play-white"/>
                         </div>
                     </button>
                 </li>
@@ -247,16 +247,16 @@ function App() {
         <footer className="dashed-border-blue">
 
         <div className="four-columns__expand-two currently-playing dashed-border-green">
-            <img className="icon" src="/boolean-uk-html-spotify/assets/album-covers/album-five.jpg" alt="album-five"/>
+            <img className="icon" src="./assets/album-covers/album-five.jpg" alt="album-five"/>
             <div className="auto-rows">
                 <h3>Peter Grimes</h3>
                 <h4>Britten (1945)</h4>
             </div>
             <button className="footer-background no-border">
-                <img className="icon-x-small" src="/boolean-uk-html-spotify/assets/img/heart-grey.png" alt="heart-grey"/>
+                <img className="icon-x-small" src="./assets/img/heart-grey.png" alt="heart-grey"/>
             </button>
             <button className="footer-background no-border">
-                <img className="icon-x-small" src="/boolean-uk-html-spotify/assets/img/folder-grey.png" alt="folder-grey"/>
+                <img className="icon-x-small" src="./assets/img/folder-grey.png" alt="folder-grey"/>
             </button>
         </div>
 
@@ -264,19 +264,19 @@ function App() {
             <div className="seven-columns__expand-one-seven control-panel">
                 <div></div>
                 <button className="footer-background no-border ma-s">
-                    <img className="icon-x-small" src="/boolean-uk-html-spotify/assets/img/random-white.png" alt="random-white"/>
+                    <img className="icon-x-small" src="./assets/img/random-white.png" alt="random-white"/>
                 </button>
                 <button className="footer-background no-border ma-s">
-                    <img className="icon-x-small" src="/boolean-uk-html-spotify/assets/img/previous-white.png" alt="previous-white"/>
+                    <img className="icon-x-small" src="./assets/img/previous-white.png" alt="previous-white"/>
                 </button>
                 <button className="footer-background no-border ma-s">
-                    <img className="icon-small" src="/boolean-uk-html-spotify/assets/img/play-white.png" alt="play-white"/>
+                    <img className="icon-small" src="./assets/img/play-white.png" alt="play-white"/>
                 </button>
                 <button className="footer-background no-border ma-s">
-                    <img className="icon-x-small" src="/boolean-uk-html-spotify/assets/img/next-white.png" alt="forward-white"/>
+                    <img className="icon-x-small" src="./assets/img/next-white.png" alt="forward-white"/>
                 </button>
                 <button className="footer-background no-border ma-s">
-                    <img className="icon-x-small" src="/boolean-uk-html-spotify/assets/img/repeat-white.png" alt="repeat-white"/>
+                    <img className="icon-x-small" src="./assets/img/repeat-white.png" alt="repeat-white"/>
                 </button>
                 <div></div>
             </div>
@@ -289,13 +289,13 @@ function App() {
 
         <div className="auto-columns dashed-border-green volume-rocker">
             <button className="footer-background no-border ma-xs">
-                <img className="icon-x-small" src="/boolean-uk-html-spotify/assets/img/files-white.png" alt="files-white"/>
+                <img className="icon-x-small" src="./assets/img/files-white.png" alt="files-white"/>
             </button>
             <button className="footer-background no-border ma-xs">
-                <img className="icon-x-small" src="/boolean-uk-html-spotify/assets/img/computer-white.png" alt="computer-white"/>
+                <img className="icon-x-small" src="./assets/img/computer-white.png" alt="computer-white"/>
             </button>
             <button className="footer-background no-border ma-xs">
-                <img className="icon-x-small" src="/boolean-uk-html-spotify/assets/img/volume-white.png" alt="volume-white"/>
+                <img className="icon-x-small" src="./assets/img/volume-white.png" alt="volume-white"/>
             </button>
             <input className="volume-slider" type="range" min="0" max="100" step="1"/>
         </div>
