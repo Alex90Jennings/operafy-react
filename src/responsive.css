@@ -55,7 +55,7 @@ footer h4:hover {
     background: var(--primary-color-black-alphapointfive);
     opacity: 0;
 }
-  
+
 .wrapper:hover .overlay {
     position: absolute;
     top: 0;
@@ -71,15 +71,16 @@ footer h4:hover {
 
 /* MEDIA QUIERIES  */
 @media screen and (max-width: 1030px) {
+
     /*minimise left menu */
     body {
         display: grid;
-        grid-template: 
-        "left-menu main-container" 1fr
-        "footer footer" var(--footer-height) /
-        var(--left-menu-width-minimised) 1fr
+        grid-template:
+            "left-menu main-container" 1fr
+            "footer footer" var(--footer-height) /
+            var(--left-menu-width-minimised) 1fr
         ;
-    
+
         height: 100vh;
     }
 
@@ -100,12 +101,12 @@ footer h4:hover {
     }
 
     .responsive .ma-m {
-         margin: 10px;
-     }
+        margin: 10px;
+    }
 
-     .currently-playing {
-         max-width: 200px;
-     }
+    .currently-playing {
+        max-width: 200px;
+    }
 
     .currently-playing .icon-x-small {
         display: block;
@@ -127,3 +128,4 @@ footer h4:hover {
     .installa-app-button {
         border-bottom: none;
     }
+}
