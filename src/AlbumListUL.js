@@ -8,7 +8,7 @@ function AlbumListUL (props) {
                     return (
                         <li className="wrapper">
                             <button className="card">
-                                <img className="album" src={`./assets/img/${playlistItem.album}.jpeg`} alt={`${playlistItem.albumAlt}`}/>
+                                <img className="album" src={`./assets/album-covers/${playlistItem.album}.jpg`} alt={`${playlistItem.albumAlt}`}/>
                                 <h3>{playlistItem.name}</h3>
                                 <h4>{playlistItem.description}</h4>
                                 <div className="overlay">
