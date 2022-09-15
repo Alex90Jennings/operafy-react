@@ -1,7 +1,7 @@
 function CurrentlyPlaying () {
     return (
         <div className="four-columns__expand-two currently-playing dashed-border-green">
-            <img className="icon" src="./assets/album-covers/album-five.jpg" alt="album-five"/>
+            <img className="icon" src="./assets/album-covers/albumfive.jpg" alt="album-five"/>
             <div className="auto-rows">
                 <h3>Peter Grimes</h3>
                 <h4>Britten (1945)</h4>
