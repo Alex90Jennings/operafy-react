@@ -1,0 +1,30 @@
+{
+  "projectId": "6aa456040010e8dbee7e",
+  "projectName": "Operafy",
+  "endpoint": "https://fra.cloud.appwrite.io/v1",
+  "tablesDB": [
+    {
+      "$id": "operafy",
+      "name": "Operafy",
+      "enabled": true
+    }
+  ],
+  "tables": [
+    {
+      "$id": "playlists",
+      "$permissions": ["create(\"users\")"],
+      "databaseId": "operafy",
+      "name": "Playlists",
+      "enabled": true,
+      "rowSecurity": true,
+      "columns": [
+        { "key": "name", "type": "varchar", "size": 100, "required": true },
+        { "key": "userId", "type": "varchar", "size": 36, "required": true },
+        { "key": "trackIds", "type": "varchar", "size": 64, "required": false, "array": true }
+      ],
+      "indexes": [
+        { "key": "userId_index", "type": "key", "columns": ["userId"], "orders": ["asc"] }
+      ]
+    }
+  ]
+}

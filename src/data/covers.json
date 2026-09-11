@@ -1,0 +1,162 @@
+{
+  "aida": {
+    "src": "/assets/covers/aida.jpg",
+    "title": "Rome Opera Company poster",
+    "artist": "The Otis Lithograph Co, Cleveland and New York",
+    "date": "1908",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aida_poster_colors_fixed.jpg"
+  },
+  "carmen": {
+    "src": "/assets/covers/carmen.jpg",
+    "title": "Poster for Rosabel Morrison's Carmen",
+    "artist": "New York : Liebler & Maass Lith.",
+    "date": "circa 1896 date QS:P,+1896-00-00T00:00:0",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rosabel_Morrison_-_Carmen_poster.png"
+  },
+  "cavalleria-rusticana": {
+    "src": "/assets/covers/cavalleria-rusticana.jpg",
+    "title": "Poster",
+    "artist": "D. Alexánder Rodríguez G.",
+    "date": "2021-08-31",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cavalleria_rusticana_poster.jpg"
+  },
+  "die-walkure": {
+    "src": "/assets/covers/die-walkure.jpg",
+    "title": "Brünnhilde, from The Rhinegold & The Valkyrie, 1910",
+    "artist": "Arthur Rackham",
+    "date": "",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Rhinegold_%26_The_Valkyrie-Rackham-161.jpg"
+  },
+  "die-zauberflote": {
+    "src": "/assets/covers/die-zauberflote.jpg",
+    "title": "Stage design for the Hall of Stars of the Queen of the Night, 1815",
+    "artist": "Karl Friedrich Schinkel",
+    "date": "circa 1815 date QS:P571,+1815-00-00T00:0",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Karl_Friedrich_Schinkel_Die_Sternenhalle_der_K%C3%B6nigin_der_Nacht_B%C3%BChnenbild_Zauberfl%C3%B6te_Mozart.tif"
+  },
+  "faust": {
+    "src": "/assets/covers/faust.jpg",
+    "title": "Théâtre Lyrique poster",
+    "artist": "Laval, T. (18..-18.. ; lithographe). Lithographe",
+    "date": "1859 date QS:P571,+1859-00-00T00:00:00Z/",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Th%C3%A9%C3%A2tre_Lyrique._Faust._Op%C3%A9ra_en_5_actes_de_MM._Jules_Barbier_et_Michel_Carr%C3%A9..._Musique_de_Ch._Gounod_-_affiche_-_lithographie_de_T._Laval_-_btv1b531791953.jpg"
+  },
+  "il-barbiere-di-siviglia": {
+    "src": "/assets/covers/il-barbiere-di-siviglia.jpg",
+    "title": "Théâtre Italien print",
+    "artist": "Eugène Delacroix Printed by: Charles Motte",
+    "date": "1821 date QS:P571,+1821-00-00T00:00:00Z/",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Th%C3%A9%C3%A2tre_Italien_(BM_1987,0516.35).jpg"
+  },
+  "la-boheme": {
+    "src": "/assets/covers/la-boheme.jpg",
+    "title": "Poster, 1896",
+    "artist": "Adolfo Hohenstein",
+    "date": "1896",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_Boheme_poster_by_Hohenstein.PNG"
+  },
+  "la-forza-del-destino": {
+    "src": "/assets/covers/la-forza-del-destino.jpg",
+    "title": "Poster",
+    "artist": "Alexandre Charles Lecocq",
+    "date": "between 1862 and 1880 date QS:P,+1850-00",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alexandre_Charles_Lecocq_-_Giuseppe_Verdi_-_La_forza_del_destino.jpg"
+  },
+  "la-gioconda": {
+    "src": "/assets/covers/la-gioconda.jpg",
+    "title": "Costume design for Gioconda, 1876",
+    "artist": "Alfredo Edel",
+    "date": "1876 date QS:P571,+1876-00-00T00:00:00Z/",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gioconda_(soprano),_figurino_di_Alfredo_Edel_per_La_Gioconda_(1876)_-_Archivio_Storico_Ricordi_ICON005187_-_Restoration_(cropped).jpg"
+  },
+  "la-traviata": {
+    "src": "/assets/covers/la-traviata.jpg",
+    "title": "Title page of the Ricordi vocal score",
+    "artist": "Ricordi (restored by Adam Cuerden)",
+    "date": "circa 1855 date QS:P,+1855-00-00T00:00:0",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giuseppe_Verdi,_La_traviata_title_page_-_Restoration.jpg"
+  },
+  "le-nozze-di-figaro": {
+    "src": "/assets/covers/le-nozze-di-figaro.jpg",
+    "title": "Playbill for the Vienna premiere, 1786",
+    "artist": "Unknown",
+    "date": "1786",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:TheMarriageofFigaroOriginalPoster.jpg"
+  },
+  "les-pecheurs-de-perles": {
+    "src": "/assets/covers/les-pecheurs-de-perles.jpg",
+    "title": "Final scene of Act 1",
+    "artist": "Giovanni Zuccarelli (1846–1897), set designer Antonio Bonamore (1845–1907), illustrator",
+    "date": "Published April 1886 in Il Teatro illust",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Final_scene_of_Act_1_of_%27The_Pearl_Fishers%27_by_Bizet_-_Gallica_(adjusted).jpg"
+  },
+  "lucia-di-lammermoor": {
+    "src": "/assets/covers/lucia-di-lammermoor.jpg",
+    "title": "Libretto title page, 1927",
+    "artist": "A. Barion editore",
+    "date": "1927",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gaetano_Donizetti_-_Lucia_di_Lammermoor_-_title_page,_1927.jpg"
+  },
+  "madama-butterfly": {
+    "src": "/assets/covers/madama-butterfly.jpg",
+    "title": "Poster, 1904",
+    "artist": "Leopoldo Metlicovitz",
+    "date": "4 September 2013, 15:39:09",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leopoldo_Metlicovitz,_1904_-_Madama_Butterfly.jpg"
+  },
+  "manon-lescaut": {
+    "src": "/assets/covers/manon-lescaut.jpg",
+    "title": "Poster",
+    "artist": "Vespasiano Bignami (1841-1929)",
+    "date": "",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Locandina_Manon_Lescaut.jpg"
+  },
+  "martha": {
+    "src": "/assets/covers/martha.jpg",
+    "title": "Libretto cover",
+    "artist": "Unknown",
+    "date": "circa 1850 date QS:P,+1850-00-00T00:00:0",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Martha_-_Flotow_-_Textbuch_.jpg"
+  },
+  "orfeo-ed-euridice": {
+    "src": "/assets/covers/orfeo-ed-euridice.jpg",
+    "title": "Orpheus and Eurydice, oil painting",
+    "artist": "Robert Fagan",
+    "date": "between 1793 and 1795 date QS:P,+1793-00",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Robert_Fagan_(1761-1816)_-_Orpheus_and_Eurydice_-_609100_-_National_Trust.jpg"
+  },
+  "pagliacci": {
+    "src": "/assets/covers/pagliacci.jpg",
+    "title": "Enrico Caruso as Canio, publicity photo, 1908",
+    "artist": "Royal Opera House Covent Garden",
+    "date": "1908",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Enrico_Caruso_in_a_publicity_photo_for_Pagliacci,_1908.jpg"
+  },
+  "rigoletto": {
+    "src": "/assets/covers/rigoletto.jpg",
+    "title": "Teatro alla Scala poster, conducted by Arturo Toscanini",
+    "artist": "Teatro alla Scala (photo: Avisadehh)",
+    "date": "2017-08-08 15:54:07",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:RIGOLETTO_POSTER.LA_SCALA.%D7%9E%D7%95%D7%93%D7%A2%D7%AA_%D7%A8%D7%99%D7%92%D7%95%D7%9C%D7%98%D7%95_%D7%9E%D7%95%D7%96%D7%90%D7%95%D7%9F_%D7%9C%D7%94_%D7%A1%D7%A7%D7%90%D7%9C%D7%94.jpg"
+  }
+}

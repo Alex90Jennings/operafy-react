@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# Operafy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Spotify-style web player built for opera. Listen to historic recordings by Enrico Caruso, Beniamino Gigli, Rosa Ponselle and more, then sign up to build playlists that are saved to your account.
 
-## Available Scripts
+**Live demo:** [operafy-zeta.vercel.app](https://operafy-zeta.vercel.app)
 
-In the project directory, you can run:
+This is a portfolio project, not a production service.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Working player**: play, pause, next and previous, shuffle, repeat (off, all or one track), seek, volume and mute. Your volume and recently played tracks are remembered.
+- **Accounts**: sign up, log in and log out with [Appwrite](https://appwrite.io) authentication. Signed-out visitors can still browse and listen.
+- **Playlists saved to Appwrite**: create, rename and delete playlists, and add or remove tracks. Each playlist row is readable and writable only by its owner.
+- **Search** across songs, operas, composers, singers and your own playlists. Search ignores accents, so "boheme" finds *La bohème*.
+- **Real routes**: `/home`, `/search`, `/playlists`, `/playlists/:id`, `/operas/:id`, `/login`, `/signup`, `/credits`, plus "coming soon" pages for podcasts, charts, genres, new releases and discover.
+- **Accessible markup**: landmarks, a single `h1` per page, tables for track lists, labelled form controls and a skip link.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## The recordings
 
-### `npm test`
+All 31 recordings are in the public domain and are streamed directly from [Wikimedia Commons](https://commons.wikimedia.org/). Most are 78 rpm discs from 1896 to 1943, digitised by the Swiss Public Domain Project. The in-app `/credits` page links to each source file.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The album covers are public-domain artwork from Commons too: original Ricordi posters by Adolfo Hohenstein and Leopoldo Metlicovitz, Karl Friedrich Schinkel's 1815 *Zauberflöte* stage design, Arthur Rackham's *Valkyrie* illustrations, period scores and playbills. Playlists without artwork fall back to a generated gradient cover.
 
-### `npm run build`
+> **Licensing note:** Commons tags these files as public domain. Recordings published before 1926 are public domain almost everywhere. Later ones (1927 to 1943) are out of copyright in the UK and EU, but may still be protected in the US. That's fine for a portfolio demo; check before any commercial use.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`scripts/generate-tracks.py` builds `src/data/tracks.json` (title, performer, year, duration, MP3 URL, source and licence) from the Commons API. Run `python3 scripts/generate-tracks.py` after editing the track list in that script.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`scripts/generate-covers.py` downloads each file listed in `scripts/cover-picks.json`, crops it to a 600×600 JPEG in `public/assets/covers/` and writes the attribution to `src/data/covers.json`. It needs Pillow (`pip install pillow`).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tech stack
 
-### `npm run eject`
+- React 18 (Create React App)
+- React Router 7
+- Appwrite Cloud (Auth + TablesDB), free tier
+- Vercel for hosting
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+cp .env.example .env.local   # then fill in your Appwrite project details
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The app runs at <http://localhost:3000>. Without Appwrite configured, everything except accounts and playlists still works.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Setting up Appwrite
 
-## Learn More
+The database schema lives in `appwrite.config.json`. With the [Appwrite CLI](https://appwrite.io/docs/tooling/command-line/installation):
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npx appwrite-cli login
+npx appwrite-cli list-organizations
+npx appwrite-cli organization create-project \
+  --organization-id <your-org-id> --project-id operafy-portfolio --name Operafy --region fra
+npx appwrite-cli project create-web-platform --project-id operafy-portfolio \
+  --platform-id localhost --name "Local development" --hostname localhost
+npx appwrite-cli push tables
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Then add a second web platform with your Vercel hostname (for example `operafy.vercel.app`) so the deployed site can call Appwrite.
 
-### Code Splitting
+| Variable | Example |
+| --- | --- |
+| `REACT_APP_APPWRITE_ENDPOINT` | `https://fra.cloud.appwrite.io/v1` |
+| `REACT_APP_APPWRITE_PROJECT_ID` | `operafy-portfolio` |
+| `REACT_APP_APPWRITE_DATABASE_ID` | `operafy` |
+| `REACT_APP_APPWRITE_PLAYLISTS_TABLE_ID` | `playlists` |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Note that free Appwrite Cloud projects pause after a week of inactivity. You can resume them from the Appwrite console.
 
-### Analyzing the Bundle Size
+## Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+| Command | What it does |
+| --- | --- |
+| `npm start` | Start the dev server |
+| `npm test` | Run the tests |
+| `npm run build` | Build for production into `build/` |
 
-### Making a Progressive Web App
+## Deploying to Vercel
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+`vercel.json` rewrites every route to `index.html`, so deep links like `/playlists/abc` work. Add the four `REACT_APP_APPWRITE_*` variables in the Vercel project settings, then deploy:
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npx vercel --prod
+```

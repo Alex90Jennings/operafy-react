@@ -1,0 +1,112 @@
+{
+  "aida": {
+    "file": "File:Aida poster colors fixed.jpg",
+    "focusY": 0.4,
+    "focusX": 0.75,
+    "label": "Rome Opera Company poster"
+  },
+  "carmen": {
+    "file": "File:Rosabel Morrison - Carmen poster.png",
+    "focusY": 0.2,
+    "label": "Poster for Rosabel Morrison's Carmen"
+  },
+  "cavalleria-rusticana": {
+    "file": "File:Cavalleria rusticana poster.jpg",
+    "focusY": 0.3,
+    "label": "Poster"
+  },
+  "die-walkure": {
+    "file": "File:The Rhinegold & The Valkyrie-Rackham-161.jpg",
+    "focusY": 0.25,
+    "label": "Brünnhilde, from The Rhinegold & The Valkyrie, 1910",
+    "artist": "Arthur Rackham"
+  },
+  "die-zauberflote": {
+    "file": "File:Karl Friedrich Schinkel Die Sternenhalle der Königin der Nacht Bühnenbild Zauberflöte Mozart.tif",
+    "focusY": 0.5,
+    "label": "Stage design for the Hall of Stars of the Queen of the Night, 1815",
+    "artist": "Karl Friedrich Schinkel"
+  },
+  "faust": {
+    "file": "File:Théâtre Lyrique. Faust. Opéra en 5 actes de MM. Jules Barbier et Michel Carré... Musique de Ch. Gounod - affiche - lithographie de T. Laval - btv1b531791953.jpg",
+    "focusY": 0.2,
+    "label": "Théâtre Lyrique poster"
+  },
+  "il-barbiere-di-siviglia": {
+    "file": "File:Théâtre Italien (BM 1987,0516.35).jpg",
+    "focusY": 0.3,
+    "label": "Théâtre Italien print"
+  },
+  "la-boheme": {
+    "file": "File:La Boheme poster by Hohenstein.PNG",
+    "focusY": 0.2,
+    "label": "Poster, 1896",
+    "artist": "Adolfo Hohenstein"
+  },
+  "la-forza-del-destino": {
+    "file": "File:Alexandre Charles Lecocq - Giuseppe Verdi - La forza del destino.jpg",
+    "focusY": 0.2,
+    "label": "Poster",
+    "artist": "Alexandre Charles Lecocq"
+  },
+  "la-gioconda": {
+    "file": "File:Gioconda (soprano), figurino di Alfredo Edel per La Gioconda (1876) - Archivio Storico Ricordi ICON005187 - Restoration (cropped).jpg",
+    "focusY": 0.3,
+    "label": "Costume design for Gioconda, 1876",
+    "artist": "Alfredo Edel"
+  },
+  "la-traviata": {
+    "file": "File:Giuseppe Verdi, La traviata title page - Restoration.jpg",
+    "focusY": 0.45,
+    "label": "Title page of the Ricordi vocal score",
+    "artist": "Ricordi (restored by Adam Cuerden)"
+  },
+  "le-nozze-di-figaro": {
+    "file": "File:TheMarriageofFigaroOriginalPoster.jpg",
+    "focusY": 0.35,
+    "label": "Playbill for the Vienna premiere, 1786"
+  },
+  "les-pecheurs-de-perles": {
+    "file": "File:Final scene of Act 1 of 'The Pearl Fishers' by Bizet - Gallica (adjusted).jpg",
+    "focusY": 0.5,
+    "label": "Final scene of Act 1"
+  },
+  "lucia-di-lammermoor": {
+    "file": "File:Gaetano Donizetti - Lucia di Lammermoor - title page, 1927.jpg",
+    "focusY": 0.3,
+    "label": "Libretto title page, 1927"
+  },
+  "madama-butterfly": {
+    "file": "File:Leopoldo Metlicovitz, 1904 - Madama Butterfly.jpg",
+    "focusY": 0.4,
+    "label": "Poster, 1904",
+    "artist": "Leopoldo Metlicovitz"
+  },
+  "manon-lescaut": {
+    "file": "File:Locandina Manon Lescaut.jpg",
+    "focusY": 0.3,
+    "label": "Poster"
+  },
+  "martha": {
+    "file": "File:Martha - Flotow - Textbuch .jpg",
+    "focusY": 0.3,
+    "label": "Libretto cover"
+  },
+  "orfeo-ed-euridice": {
+    "file": "File:Robert Fagan (1761-1816) - Orpheus and Eurydice - 609100 - National Trust.jpg",
+    "focusY": 0.3,
+    "label": "Orpheus and Eurydice, oil painting",
+    "artist": "Robert Fagan"
+  },
+  "pagliacci": {
+    "file": "File:Enrico Caruso in a publicity photo for Pagliacci, 1908.jpg",
+    "focusY": 0.2,
+    "label": "Enrico Caruso as Canio, publicity photo, 1908"
+  },
+  "rigoletto": {
+    "file": "File:RIGOLETTO POSTER.LA SCALA.מודעת ריגולטו מוזאון לה סקאלה.jpg",
+    "focusY": 0.25,
+    "label": "Teatro alla Scala poster, conducted by Arturo Toscanini",
+    "artist": "Teatro alla Scala (photo: Avisadehh)"
+  }
+}
