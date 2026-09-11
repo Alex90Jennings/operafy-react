@@ -144,5 +144,5 @@ npx vercel --prod
 ---
 
 <p align="center">
-  Built in 2022 with HTML, CSS and a lot of early mornings · Rebuilt in 2026 with Claude
+  Built in 2022 with HTML, CSS and a lot of early mornings · Rebuilt in 2026 with React and a bit of help from Claude.
 </p>
