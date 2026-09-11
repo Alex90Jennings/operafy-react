@@ -36,7 +36,7 @@ This is the project that got me hooked on development. It was the first one wher
 
 ## 2026: the JavaScript update
 
-Four years later, Claude and I gave it the update it deserved. The 2022 styling was the starting point, and now everything that looked like it worked actually does.
+Four years later, Claude and I gave it the update it deserved. The 2022 styling was the starting point, and now everything that looked like it worked actually does. In terms of this project, I've taken it as far as I would like to go, it's purpose was to learn HTML and CSS best practices, and it did that. The 2026 update just serves to revive a fun project, and remind myself of how it all started.
 
 | | 2022 | 2026 |
 | --- | --- | --- |
@@ -87,7 +87,7 @@ The in-app [Credits page](https://operafy-music.vercel.app/credits) links every 
 
 - **Frontend:** React 18 (Create React App), React Router 7, plain CSS
 - **Backend:** Appwrite Cloud (authentication, and TablesDB with owner-only row permissions), free tier
-- **Hosting:** Vercel
+- **Hosting:** Vercel, free tier
 - **Data:** Python scripts that build the track list and covers from the Wikimedia Commons API
 
 ## Running it locally
@@ -144,5 +144,5 @@ npx vercel --prod
 ---
 
 <p align="center">
-  Built in 2022 with HTML, CSS and a lot of early mornings · Rebuilt in 2026 with React and Claude
+  Built in 2022 with HTML, CSS and a lot of early mornings · Rebuilt in 2026 with Claude
 </p>
