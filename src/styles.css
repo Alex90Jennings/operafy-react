@@ -988,6 +988,12 @@ tr.is-current .track-title {
   color: var(--color-grey);
 }
 
+/* Tone the browser's blue clear button down to match the dark field. */
+.search-input::-webkit-search-cancel-button {
+  cursor: pointer;
+  filter: grayscale(1) brightness(1.8);
+}
+
 .search-input:hover {
   border-color: var(--color-track);
 }

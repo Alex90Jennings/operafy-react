@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import Icon from '../components/Icon';
 import OperaGrid from '../components/OperaGrid';
@@ -13,7 +13,9 @@ import { pluralize } from '../utils/time';
 function SearchPage() {
   useDocumentTitle('Search');
   const [searchParams, setSearchParams] = useSearchParams();
-  const query = searchParams.get('q') ?? '';
+  // The input is driven by local state. React Router applies URL updates in a transition, so reading the
+  // value straight from the URL lags behind fast typing and drops characters.
+  const [query, setQuery] = useState(() => searchParams.get('q') ?? '');
   const { user } = useAuth();
   const { playlists } = usePlaylists();
   const inputRef = useRef(null);
@@ -33,6 +35,7 @@ function SearchPage() {
 
   const handleChange = (event) => {
     const { value } = event.target;
+    setQuery(value);
     setSearchParams(value ? { q: value } : {}, { replace: true });
   };
 
