@@ -89,7 +89,13 @@ Along the way: buttons that aren't buttons are gone and track lists are proper t
 
 ## The music and artwork
 
-Everything you hear and see is in the public domain, from [Wikimedia Commons](https://commons.wikimedia.org/).
+Everything you hear and see is in the public domain, sourced from [Wikimedia Commons](https://commons.wikimedia.org/) and served from my own CDN.
+
+> The recordings used to be hotlinked straight from Commons, which meant the player broke whenever a
+> file was re-encoded or moved, on someone else's bandwidth. All 31 recordings and 20 covers are now
+> hosted in a private S3 bucket behind CloudFront, built with Terraform in
+> [operafy-infra](https://github.com/Alex90Jennings/operafy-infra). Every file is still credited to
+> its original source below and on the credits page.
 
 > **Recordings** — mostly 78 rpm discs digitised by the Swiss Public Domain Project: Enrico Caruso, Beniamino Gigli, Rosa Ponselle, Amelita Galli-Curci, Toti Dal Monte, and La Scala under Lorenzo Molajoli.
 >
@@ -113,6 +119,7 @@ Commons tags these files as public domain. Recordings published before 1926 are 
 | **Frontend** | React 18 (Create React App), React Router 7, plain CSS |
 | **Backend** | Appwrite Cloud — authentication and TablesDB with owner-only row permissions, free tier |
 | **Hosting** | Vercel, free tier, with SPA rewrites so deep links work |
+| **Media** | Amazon S3 behind CloudFront, the bucket private and readable only by the distribution. Provisioned with Terraform in [operafy-infra](https://github.com/Alex90Jennings/operafy-infra) |
 | **Data** | Python scripts that build the catalogue and covers from the Wikimedia Commons API |
 
 ---
