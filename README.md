@@ -49,6 +49,12 @@ This is the project that got me hooked on development. It was the first one wher
 
 Four years later, Claude and I gave it the update it deserved. The 2022 styling was the starting point, and now everything that looked like it worked actually does. In terms of this project, I've taken it as far as I would like to go; its purpose was to learn HTML and CSS best practices, and it did that. The 2026 update just serves to revive a fun project, and remind myself of how it all started.
 
+I lied. The loading of the images and audio was taking far too long. Every recording was hotlinked
+from Wikimedia Commons, which is someone else's bandwidth and someone else's uptime, and a file that
+gets re-encoded or moved takes the player down with it. So I went back a third time, wrote the
+infrastructure in [operafy-infra](https://github.com/Alex90Jennings/operafy-infra), and moved all 31
+recordings and 20 covers onto a private S3 bucket behind CloudFront. *Now* it is finished.
+
 <table>
 <tr><th align="left"></th><th align="left">2022</th><th align="left">2026</th></tr>
 <tr><td><strong>Music</strong></td><td>Decorative play buttons</td><td>31 real recordings from 1896–1943 you can play</td></tr>
