@@ -1,6 +1,7 @@
 import coverData from './covers.json';
 import operaData from './operas';
 import trackData from './tracks.json';
+import { mediaUrl } from '../config/media';
 
 const COVER_PALETTE = [
   ['#5b1a3a', '#c2415d'],
@@ -15,15 +16,19 @@ const COVER_PALETTE = [
   ['#48202a', '#a8434f'],
 ];
 
+function resolveCover(cover) {
+  return cover ? { ...cover, src: mediaUrl(cover.src) } : null;
+}
+
 export const operas = [...operaData]
   .sort((a, b) => a.year - b.year)
   .map((opera, index) => ({
     ...opera,
     colors: COVER_PALETTE[index % COVER_PALETTE.length],
-    cover: coverData[opera.id] ?? null,
+    cover: resolveCover(coverData[opera.id]),
   }));
 
-export const tracks = trackData;
+export const tracks = trackData.map((track) => ({ ...track, src: mediaUrl(track.src) }));
 export const allTrackIds = tracks.map((track) => track.id);
 
 const operasById = new Map(operas.map((opera) => [opera.id, opera]));
